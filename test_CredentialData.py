@@ -17,3 +17,10 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credential.platform, "instagram")
         self.assertEqual(self.new_credential.username, "reina")
         self.assertEqual(self.new_credential.password, "12345")
+    
+    def save_credential(self):
+
+        """
+        save credential objects to the credential list
+        """
+        CredentialData.credentials.append(self)
