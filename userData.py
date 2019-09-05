@@ -19,4 +19,12 @@ class UserData:
         '''
         UserData.createAccount.append(self)
 
-    
+    @classmethod
+    def userLogin(cls, used_name, used_password):
+        '''
+        function to check if the user exist
+        '''
+        for user in UserData.createAccount:
+            if user.userName == used_name and used_password == used_password:
+                return user
+            return False
