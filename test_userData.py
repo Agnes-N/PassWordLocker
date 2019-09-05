@@ -45,10 +45,7 @@ class TestuserData(unittest.TestCase):
         self.newUser.saveAccount()
         test_userData = UserData("Aggy","Reina","aggyreina@gmail.com","aggy","12345")
         test_userData.saveAccount()
-        self.assertEqual(len(UserData.createAccount),2)
-
-    
+        self.assertEqual(len(UserData.createAccount),2)  
 
 if __name__ == '__main__':
     unittest.main()
-
