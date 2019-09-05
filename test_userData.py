@@ -20,6 +20,7 @@ class TestuserData(unittest.TestCase):
 
     def tearDown(self):
         '''
+        Function to clean up the existing inputs
         '''
         UserData.createAccount = []
 

@@ -20,11 +20,11 @@ class UserData:
         UserData.createAccount.append(self)
 
     @classmethod
-    def userLogin(cls, used_name, used_password):
+    def userLogin(cls, generatedName, generatedPassword):
         '''
         function to check if the user exist
         '''
         for user in UserData.createAccount:
-            if user.userName == used_name and used_password == used_password:
+            if user.userName == generatedName and generatedPassword == generatedPassword:
                 return user
             return False
