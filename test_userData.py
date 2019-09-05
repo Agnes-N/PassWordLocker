@@ -31,6 +31,6 @@ class TestuserData(unittest.TestCase):
         self.newUser.saveAccount()
         self.assertEqual(len(UserData.createAccount),1)
 
-# if _name_ == '_main_':
-#     unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
