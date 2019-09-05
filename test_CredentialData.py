@@ -34,7 +34,7 @@ class TestCredential(unittest.TestCase):
         test display credentials method
         """
         self.assertEqual(CredentialData.display_credentials(),
-                        CredentialData.credentials)
+                         CredentialData.credentials)
 
 
 if __name__ == '__main__':
