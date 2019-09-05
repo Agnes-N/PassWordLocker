@@ -11,3 +11,12 @@ class UserData:
         self.lastName = lastName
         self.email = email
         self.userName = userName
+        self.password = password
+
+    def saveAccount(self):
+        '''
+        A function to save new user to createAcount list
+        '''
+        UserData.createAccount.append(self)
+
+    # @classmethod
