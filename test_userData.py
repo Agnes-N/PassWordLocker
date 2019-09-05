@@ -17,3 +17,19 @@ class TestuserData(unittest.TestCase):
         self.assertEqual(self.newUser.email, "aggyreina@gmail.com")
         self.assertEqual(self.newUser.userName, "aggy")
         self.assertEqual(self.newUser.password, "12345")
+
+    def tearDown(self):
+        '''
+        '''
+        UserData.createAccount = []
+
+    def test_save(self):
+        '''
+        A function that will help us to save the created account
+        '''
+        self.newUser.saveAccount()
+        self.assertEqual(len(UserData.createAccount),1)
+
+# if _name_ == '_main_':
+#     unittest.main()
+
