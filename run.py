@@ -37,3 +37,12 @@ def saveCredentials(credential):
     save credential
     '''
     credential.saveCredentials()
+
+def randomPassword():
+    '''
+    function to generate random password
+    '''
+    chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
+    size = random.randint(8, 12)
+    
+    return password
