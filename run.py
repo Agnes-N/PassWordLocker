@@ -13,7 +13,14 @@ def newUsers(name1, name2, emailAddress, username, passWord):
     return newUser
 
 def saveAccounts(account):
-    '''save new account
+    '''
+    save new account
     '''
     account.saveAccount()
 
+def checkUser(generatedName, generatedPassword):
+    '''
+    function to check if user exist
+    '''
+    userExist = UserData.userLogin(generatedName, generatedPassword)
+    return userExist
