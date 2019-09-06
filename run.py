@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 import pyperclip
-from userData import User, Credential
+from userCredential import User, Credential
 
 def create_user(fname,lname,password):
 	'''
@@ -104,7 +104,7 @@ def main():
 						while True:
 							print(' ')
 							print("-"*60)
-							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
+							print('Choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
 							psw_choice = input('Enter an option: ').lower().strip()
 							print("-"*60)
 							if psw_choice == 'ep':
@@ -117,7 +117,7 @@ def main():
 							elif psw_choice == 'ex':
 								break
 							else:
-								print('Oops! Wrong option entered. Try again.')
+								print('Try again.')
 						save_credential(create_credential(user_name,site_name,account_name,password))
 						print(' ')
 						print(f'Credential Created: Site Name: {site_name} - Account Name: {account_name} - Password: {password}')
@@ -132,7 +132,7 @@ def main():
 							print(' ')	
 						else:
 							print(' ')
-							print("You don't seem to have any credentials saved yet")
+							print("You don't have any credentials saved yet")
 							print(' ')
 					elif short_code == 'copy':
 						print(' ')
@@ -140,23 +140,16 @@ def main():
 						copy_credential(chosen_site)
 						print('')
 					else:
-						print('Oops! Wrong option entered. Try again.')
+						print('Try again.')
 
 			else: 
 				print(' ')
-				print('Oops! Wrong details entered. Try again or Create an Account.')		
+				print('Try again or Create an Account.')		
 		
 		else:
 			print("-"*60)
 			print(' ')
-			print('Oops! Wrong option entered. Try again.')
-				
-
-
-
-
-
+			print('Try again.')				
 
 if __name__ == '__main__':
 	main()
-
