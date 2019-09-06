@@ -2,7 +2,7 @@ import pyperclip
 import random
 import string
 
-# global users_list 
+global users_list 
 class User:
 	'''
 	Class to create user accounts and save their information
@@ -27,7 +27,6 @@ class Credential:
 	'''
 	Class to create  account credentials, generate passwords and save their information
 	'''
-	# Class Variables
 	credentials_list =[]
 	user_credentials_list = []
 	@classmethod
@@ -46,7 +45,6 @@ class Credential:
 		Method to define the properties for each user object will hold.
 		'''
 
-		# instance variables
 		self.user_name = user_name
 		self.site_name = site_name
 		self.account_name = account_name
@@ -56,7 +54,6 @@ class Credential:
 		'''
 		Function to save a newly created user instance
 		'''
-		# global users_list
 		Credential.credentials_list.append(self)
 	
 	def generate_password(size=8, char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
@@ -77,8 +74,6 @@ class Credential:
 				user_credentials_list.append(credential)
 		return user_credentials_list
 				
-
-	
 	@classmethod
 	def find_by_site_name(cls, site_name):
 		'''
