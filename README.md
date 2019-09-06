@@ -23,12 +23,12 @@ Password Locker is python application that runs in terminal and allows users to 
 
 ### Input
 
-ac -create account
-li -login to account
-ex -exit to password locker
-cc -create credential
-dc -display credential
-copy -copy password
+* ac -create account
+* li -login to account
+* ex -exit to password locker
+* cc -create credential
+* dc -display credential
+* copy -copy password
 
 ### Output
 
