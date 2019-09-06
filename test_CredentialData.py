@@ -22,14 +22,14 @@ class TestCredential(unittest.TestCase):
 
         CredentialData.credentials = []
 
-    def test_save_credential(self):
+    def test_saveCredentials(self):
         """
         test if credential is saved in the credentials list
         """
-        self.new_credential.save_credential()
+        self.new_credential.saveCredentials()
         self.assertEqual(len(CredentialData.credentials), 1)
 
-    def test_display_credentials(self):
+    def test_displayCredentials(self):
         """
         test display credentials method
         """

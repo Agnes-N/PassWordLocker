@@ -28,6 +28,12 @@ class TestuserData(unittest.TestCase):
         self.assertEqual(self.newUser.userName, "aggy")
         self.assertEqual(self.newUser.password, "12345")
 
+    def tearDown(self):
+        '''
+        Function to clean up after each test case has run
+        '''
+        UserData.createAccount = []
+        
     def test_save(self):
         '''
         test_save test case to test if the created account is saved into the account list
@@ -35,11 +41,7 @@ class TestuserData(unittest.TestCase):
         self.newUser.saveAccount()
         self.assertEqual(len(UserData.createAccount), 1)
 
-    def tearDown(self):
-        '''
-        Function to clean up after each test case has run
-        '''
-        UserData.createAccount = []
+    
 
     def test_save_multiple_users(self):
         """

@@ -12,14 +12,14 @@ class CredentialData:
         self.username = username
         self.password = password
 
-    def save_credential(self):
+    def saveCredentials(self):
         """
         save credential objects to the credential list
         """
         CredentialData.credentials.append(self)
 
     @classmethod
-    def display_credentials(cls):
+    def displayCredentials(cls):
         """
         displays the credentials 
         """
