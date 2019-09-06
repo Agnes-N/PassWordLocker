@@ -86,5 +86,19 @@ def main():
             print("email:")
             emails = input()
             print('\n')
+
+            print("Use these short codes: crp -create a password, gpp -generate a password")
+            short_code = input()
+            while True:
+                if short_code == "crp":
+                    print("Password:")
+                    password = input()
+                    break
+                elif short_code == "gpp":
+                    password = randomPassword()
+                    print('\n')
+                    break
+                else:                    
+                    print("Create new password")
+                    break
             
-                                                                                                                                
