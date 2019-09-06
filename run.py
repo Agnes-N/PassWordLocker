@@ -53,3 +53,9 @@ def displayCredential():
     will return the save credentials
     '''
     return CredentialData.display_credentials()
+
+def deleteCredentials(credential):
+    '''
+    delete a credential
+    '''
+    credential.deleteCredential()
