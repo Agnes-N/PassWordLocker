@@ -24,3 +24,10 @@ def checkUser(generatedName, generatedPassword):
     '''
     userExist = UserData.userLogin(generatedName, generatedPassword)
     return userExist
+
+def addCredential(account, accountName, accountPassword):
+    '''
+    function to add credential
+    '''
+    addedCredential = CredentialData(account, accountName, accountPassword)
+    return addedCredential
