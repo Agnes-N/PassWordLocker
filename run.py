@@ -31,3 +31,9 @@ def addCredential(account, accountName, accountPassword):
     '''
     addedCredential = CredentialData(account, accountName, accountPassword)
     return addedCredential
+
+def saveCredentials(credential):
+    '''
+    save credential
+    '''
+    credential.saveCredentials()
