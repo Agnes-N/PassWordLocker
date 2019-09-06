@@ -59,3 +59,32 @@ def deleteCredentials(credential):
     delete a credential
     '''
     credential.deleteCredential()
+
+def main():
+    print("\n")
+    print("Welcome to Password Locker")
+    print("This App will store your credentails and generate a password for you")
+
+    while True:
+        # print("Use these short codes : cc - create a new account, dc - display contacts, fc -find a contact, ex -exit the contact list, del -delete, ce -copy email")
+
+        # short_code = input().lower()
+        print("Use these short codes: cac -create new account and si -signin if you are have an account.")
+        short_code = input().lower()
+
+        # account_login = input()
+        if short_code == "cac":
+            print("First name:")
+            firstname = input()
+            print('\n')
+            print("Last name:")
+            lastname = input()
+            print('\n')
+            print("Username:")
+            username = input()
+            print('\n')
+            print("email:")
+            emails = input()
+            print('\n')
+            
+                                                                                                                                
