@@ -108,4 +108,20 @@ def main():
             print('\n')
             break
 
-        
+        elif short_code == "si":
+            print("Sign In:\n")
+            print("Username:")
+            username = input()
+            print('\n')
+            print("Password:")
+            password = input()
+            print('\n')
+            signIn = checkUser(username, password)
+            if signIn == True:
+                break
+            print("Please sign up to access password locker.\n")
+
+        else:
+            print("Try the choices above")
+
+   
