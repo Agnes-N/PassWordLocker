@@ -11,3 +11,9 @@ def newUsers(name1, name2, emailAddress, username, passWord):
     '''
     newUser = UserData(name1, name2, emailAddress, username, passWord)
     return newUser
+
+def saveAccounts(account):
+    '''save new account
+    '''
+    account.saveAccount()
+
