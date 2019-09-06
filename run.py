@@ -101,4 +101,11 @@ def main():
                 else:                    
                     print("Create new password")
                     break
-            
+
+            saveAccounts(newUsers(firstname, lastname, emails, username, password))
+            print("Created successfully.")
+            print(f" Username: {username}, password: {password}.")
+            print('\n')
+            break
+
+        
