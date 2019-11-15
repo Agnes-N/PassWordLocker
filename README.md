@@ -30,14 +30,7 @@ Password Locker is python application that runs in terminal and allows users to 
 * dc -display credential
 * copy -copy password
 
-### Output
 
- * created account
- * logged in successfully
- * credential created
- * view credentials you have created 
- * display the accounts you have created
- * copy the credential and paste it anywhere you want
 
 ## Technologies Used
 
